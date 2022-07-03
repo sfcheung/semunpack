@@ -1,0 +1,13 @@
+#' @aliases semunpack-package
+#' @keywords internal
+"_PACKAGE"
+
+# The following block is used by usethis to automatically manage
+# roxygen namespace tags. Modify with care!
+## usethis namespace: start
+## usethis namespace: end
+NULL
+
+utils::globalVariables(c("df", "chisq", "model",
+                         "b", "a",
+                         "CFI", "TLI", "RMSEA"))
