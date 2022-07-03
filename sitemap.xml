@@ -22,6 +22,18 @@
     <loc>https://sfcheung.github.io/semunpack/news/index.html</loc>
   </url>
   <url>
+    <loc>https://sfcheung.github.io/semunpack/reference/annotate_matrices.html</loc>
+  </url>
+  <url>
     <loc>https://sfcheung.github.io/semunpack/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcheung.github.io/semunpack/reference/plot_models_fm.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcheung.github.io/semunpack/reference/print.annotate_matrices.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcheung.github.io/semunpack/reference/semunpack-package.html</loc>
   </url>
 </urlset>
