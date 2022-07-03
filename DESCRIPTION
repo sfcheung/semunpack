@@ -1,12 +1,12 @@
-Package: learnsemanalysis
+Package: semunpack
 Title: Functions for Learning and Teaching Structural Equation Modeling
 Version: 0.0.1.9000
-Authors@R: 
+Authors@R:
     c(person(given = "Shu Fai",
            family = "Cheung",
            role = c("aut", "cre"),
            email = "shufai.cheung@gmail.com",
-           comment = c(ORCID = "0000-0002-9871-9448"))
+           comment = c(ORCID = "0000-0002-9871-9448")))
 Description: A collection of functions for learning and teaching structural
              equations, such as computing model df, matching paths to
              matrix elements, and plotting the estimation history.
@@ -14,7 +14,7 @@ License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-Suggests: 
+Suggests:
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)

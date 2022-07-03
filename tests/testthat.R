@@ -1,4 +1,4 @@
 library(testthat)
-library(learnsemanalysis)
+library(semunpack)
 
-test_check("learnsemanalysis")
+test_check("semunpack")
