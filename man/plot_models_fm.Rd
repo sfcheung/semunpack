@@ -40,7 +40,7 @@ and \code{c(.00, .02, .05, .08)} for \code{"rmsea"}.}
 is .5. Used by \code{\link[ggrepel:geom_text_repel]{ggrepel::geom_label_repel()}}.}
 
 \item{include_model_values}{If \code{TRUE}, the values of the models on
-\code{fit_measure} will be added to \code{fit_values}. Default if \code{FALSE.}}
+\code{fit_measure} will be added to \code{fit_values}. Default is \code{FALSE.}}
 
 \item{include_baseline}{If \code{TRUE}, the baseline model is included in the
 plot. Default is \code{FALSE}.}
@@ -94,16 +94,20 @@ plot_models_fm(fit, fit2, fit3, fit_values = c(.90, .925, .95, fit_cfi))
 plot_models_fm(fit, fit2, fit3, include_model_values = TRUE)
 
 # Supply the models as a named list
-plot_models_fm(list(A = fit, B = fit2, C = fit3), fit_values = c(.90, .925, .95))
+plot_models_fm(list(A = fit, B = fit2, C = fit3),
+               fit_values = c(.90, .925, .95))
 
 # Plot the models, fit measure set to TLI
 plot_models_fm(fit, fit2, fit3, fit_measure = "tli")
-plot_models_fm(fit, fit2, fit3, fit_measure = "tli", fit_values = c(.90, .925, .95, fit_tli))
-plot_models_fm(fit, fit2, fit3, fit_measure = "tli", include_model_values = TRUE)
+plot_models_fm(fit, fit2, fit3, fit_measure = "tli",
+               fit_values = c(.90, .925, .95, fit_tli))
+plot_models_fm(fit, fit2, fit3, fit_measure = "tli",
+               include_model_values = TRUE)
 
 # Plot the models, fit measure set to RMSEA
 plot_models_fm(fit, fit2, fit3, fit_measure = "rmsea")
-plot_models_fm(fit, fit2, fit3, fit_measure = "rmsea", include_model_values = TRUE)
+plot_models_fm(fit, fit2, fit3, fit_measure = "rmsea",
+               include_model_values = TRUE)
 
 }
 \seealso{

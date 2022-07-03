@@ -3,3 +3,6 @@
 S3method(print,annotate_matrices)
 export(annotate_matrices)
 export(plot_models_fm)
+export(show_cfi)
+export(show_ifi)
+export(show_tli)
