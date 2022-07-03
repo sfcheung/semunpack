@@ -1,7 +1,8 @@
-# semunpack: Learning SEM Analysis
+# semunpack: Learn SEM Analysis
 
 This package includes functions for learning and teaching structural equation
-modeling. For more information on this package, please visit its GitHub page:
+modeling. It "unpacks" things inside an SEM analysis. For more information
+on this package, please visit its GitHub page:
 
 https://sfcheung.github.io/semunpack/
 
