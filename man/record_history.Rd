@@ -40,12 +40,12 @@ A \code{fit_history}-class object with a plot method.
 }
 \description{
 Record the minimization history when a model is fitted
-by \code{\link[lavaan:lavaan]{lavaan::lavaan()}} or its wrappers (e.g., \link[lavaan:sem]{lavaan::sem} or
+by \code{\link[lavaan:lavaan]{lavaan::lavaan()}} or its wrappers (e.g., \code{\link[lavaan:sem]{lavaan::sem()}} or
 \code{\link[lavaan:cfa]{lavaan::cfa()}}).
 }
 \details{
 It records the minimization history when a model is fitted
-by \code{\link[lavaan:lavaan]{lavaan::lavaan()}} or its wrappers (e.g., \link[lavaan:sem]{lavaan::sem} or
+by \code{\link[lavaan:lavaan]{lavaan::lavaan()}} or its wrappers (e.g., \code{\link[lavaan:sem]{lavaan::sem()}} or
 \code{\link[lavaan:cfa]{lavaan::cfa()}}). The recorded history can then be plotted or
 displayed, for visualizing and understanding how the estimates
 of free parameters is found.

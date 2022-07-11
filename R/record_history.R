@@ -1,11 +1,11 @@
 #' @title Record the Minimization History
 #'
 #' @description Record the minimization history when a model is fitted
-#'  by [lavaan::lavaan()] or its wrappers (e.g., [lavaan::sem] or
+#'  by [lavaan::lavaan()] or its wrappers (e.g., [lavaan::sem()] or
 #'  [lavaan::cfa()]).
 #'
 #' @details It records the minimization history when a model is fitted
-#'  by [lavaan::lavaan()] or its wrappers (e.g., [lavaan::sem] or
+#'  by [lavaan::lavaan()] or its wrappers (e.g., [lavaan::sem()] or
 #'  [lavaan::cfa()]). The recorded history can then be plotted or
 #'  displayed, for visualizing and understanding how the estimates
 #'  of free parameters is found.
