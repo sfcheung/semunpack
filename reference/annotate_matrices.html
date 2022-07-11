@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">semunpack</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1.9003</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,10 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">annotate_matrices</span><span class="op">(</span><span class="va">fit</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">annotate_matrices</span><span class="op">(</span><span class="va">fit</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for annotate_matrices</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -56,6 +59,15 @@
     <dl><dt>fit</dt>
 <dd><p>The output of <code><a href="https://rdrr.io/pkg/lavaan/man/lavaan.html" class="external-link">lavaan::lavaan()</a></code> or its wrappers, such as
 <code><a href="https://rdrr.io/pkg/lavaan/man/cfa.html" class="external-link">lavaan::cfa()</a></code> and <code><a href="https://rdrr.io/pkg/lavaan/man/sem.html" class="external-link">lavaan::sem()</a></code>.</p></dd>
+
+
+<dt>x</dt>
+<dd><p>A 'annotate_matrices'-class object. The output of
+<code>annotate_matrices()</code>.</p></dd>
+
+
+<dt>...</dt>
+<dd><p>Optional arguments. To be passed to the default print method.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -80,6 +92,11 @@ the model matrices and the model parameters.</p>
 <p>It currently supports a single-level single-group model only.</p>
     </div>
     <div class="section level2">
+    <h2 id="methods-by-generic-">Methods (by generic)<a class="anchor" aria-label="anchor" href="#methods-by-generic-"></a></h2>
+    
+<ul><li><p><code>print</code>: The print method of the output of <code>annotate_matrices()</code></p></li>
+</ul></div>
+    <div class="section level2">
     <h2 id="author">Author<a class="anchor" aria-label="anchor" href="#author"></a></h2>
     <p>Shu Fai Cheung <a href="https://orcid.org/0000-0002-9871-9448" class="external-link">https://orcid.org/0000-0002-9871-9448</a></p>
     </div>
@@ -90,7 +107,7 @@ the model matrices and the model parameters.</p>
 <span class="r-in"><span><span class="co"># Adapted from https://lavaan.ugent.be/tutorial/cfa.html</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://lavaan.ugent.be" class="external-link">lavaan</a></span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> This is lavaan 0.6-11</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> This is lavaan 0.6-12</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> lavaan is FREE software! Please report any bugs.</span>
 <span class="r-in"><span><span class="va">HS.model</span> <span class="op">&lt;-</span> <span class="st">'</span></span></span>
 <span class="r-in"><span><span class="st">visual  =~ x1 + x2 + x3</span></span></span>
