@@ -44,7 +44,7 @@
 #'                        "visual~~textual"),
 #'             last_n = 10,
 #'             orientation = "vertical")
-#'
+#' @importFrom lavaan coef
 #' @export
 #'
 #' @order 1
@@ -56,7 +56,7 @@ record_history <- function(fit) {
                                  se = "none",
                                  test = "standard"))
     k <- lavaan::lavInspect(fit1, "iterations")
-    capmat <- out2matrix(cap[1:(k + 1)], names(stats::coef(fit1)))
+    capmat <- out2matrix(cap[1:(k + 1)], names(lavaan::coef(fit1)))
     attr(capmat, "fit_recorded") <- fit1
     attr(capmat, "original_call") <- stats::getCall(fit)
     class(capmat) <- c("fit_history", class(capmat))

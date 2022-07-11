@@ -84,7 +84,6 @@ plot(fit_h, params = c("visual=~x2", "visual=~x3",
                        "visual~~textual"),
             last_n = 10,
             orientation = "vertical")
-
 }
 \author{
 Shu Fai Cheung \url{https://orcid.org/0000-0002-9871-9448}
