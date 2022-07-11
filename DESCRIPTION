@@ -1,6 +1,6 @@
 Package: semunpack
 Title: Functions for Learning and Teaching Structural Equation Modeling
-Version: 0.0.1.9001
+Version: 0.0.1.9002
 Authors@R:
     c(person(given = "Shu Fai",
            family = "Cheung",
