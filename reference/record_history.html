@@ -14,7 +14,7 @@ lavaan::cfa())."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/
     
     <a class="navbar-brand me-2" href="../index.html">semunpack</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1.9003</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1.9004</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,19 +147,44 @@ process.</p>
 <span class="r-in"><span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/lavaan/man/cfa.html" class="external-link">cfa</a></span><span class="op">(</span><span class="va">HS.model</span>, data <span class="op">=</span> <span class="va">HolzingerSwineford1939</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># Refit the model with the history recorded</span></span></span>
 <span class="r-in"><span><span class="va">fit_h</span> <span class="op">&lt;-</span> <span class="fu">record_history</span><span class="op">(</span><span class="va">fit</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> $ operator not defined for this S4 class</span>
 <span class="r-in"><span><span class="va">fit_h</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in eval(expr, envir, enclos):</span> object 'fit_h' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Original call:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> lavaan::lavaan(model = HS.model, data = HolzingerSwineford1939, </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     model.type = "cfa", int.ov.free = TRUE, int.lv.free = FALSE, </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     auto.fix.first = TRUE, auto.fix.single = TRUE, auto.var = TRUE, </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     auto.cov.lv.x = TRUE, auto.cov.y = TRUE, auto.th = TRUE, </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     auto.delta = TRUE, auto.efa = TRUE)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> The number of iterations: 29 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> The minimization history for the first 10 iterations:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   iteration     f visual=~x2 visual=~x3 textual=~x5 textual=~x6 x1~~x1 x2~~x2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1         1 0.349      0.791      1.126       1.161       0.950  0.746  0.767</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2         2 0.319      0.821      1.061       1.156       0.986  0.781  0.943</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3         3 0.184      0.791      0.943       1.115       0.940  0.799  0.995</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4         4 0.171      0.707      0.787       1.008       0.970  0.790  1.055</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5         5 0.061      0.668      0.768       1.115       0.876  0.767  1.062</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6         6 0.046      0.660      0.867       1.143       0.927  0.713  1.061</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7         7 0.045      0.653      0.853       1.125       0.943  0.668  1.075</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8         8 0.043      0.663      0.843       1.118       0.952  0.655  1.077</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9         9 0.042      0.660      0.830       1.128       0.930  0.651  1.081</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   x3~~x3 x4~~x4 x5~~x5 x6~~x6 visual~~visual textual~~textual visual~~textual</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1  0.702  0.727  0.871  0.658          0.481            0.781           0.505</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2  0.799  0.599  0.783  0.504          0.916            1.082          -0.285</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3  0.752  0.408  0.600  0.298          0.901            1.072          -0.162</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4  0.682  0.233  0.298  0.311          0.803            1.008           0.143</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5  0.674  0.415  0.439  0.410          0.717            0.944           0.307</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6  0.768  0.389  0.464  0.368          0.700            0.938           0.335</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7  0.788  0.387  0.451  0.348          0.662            0.931           0.393</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8  0.797  0.381  0.455  0.343          0.675            0.952           0.350</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9  0.801  0.372  0.447  0.352          0.680            0.951           0.351</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">fit_h</span>, params <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"visual=~x2"</span>, <span class="st">"visual=~x3"</span>,</span></span>
 <span class="r-in"><span>                       <span class="st">"visual~~textual"</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>            last_n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in plot(fit_h, params = c("visual=~x2", "visual=~x3", "visual~~textual"),     last_n = 10):</span> object 'fit_h' not found</span>
+<span class="r-plt img"><img src="record_history-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">fit_h</span>, params <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"visual=~x2"</span>, <span class="st">"visual=~x3"</span>,</span></span>
 <span class="r-in"><span>                       <span class="st">"visual~~textual"</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>            last_n <span class="op">=</span> <span class="fl">10</span>,</span></span>
 <span class="r-in"><span>            orientation <span class="op">=</span> <span class="st">"vertical"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in plot(fit_h, params = c("visual=~x2", "visual=~x3", "visual~~textual"),     last_n = 10, orientation = "vertical"):</span> object 'fit_h' not found</span>
-<span class="r-in"><span></span></span>
+<span class="r-plt img"><img src="record_history-2.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

@@ -3,7 +3,7 @@ pkgdown: 2.0.5
 pkgdown_sha: ~
 articles:
   semunpack: semunpack.html
-last_built: 2022-07-11T14:41Z
+last_built: 2022-07-11T14:54Z
 urls:
   reference: https://sfcheung.github.io/semunpack/reference
   article: https://sfcheung.github.io/semunpack/articles
