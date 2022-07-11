@@ -82,35 +82,15 @@ annotate_matrices <- function(fit) {
 
 
 
-#' @title Print Method for 'annotate_matrices'-Class Objects
-#'
-#' @description Prints the output of [annotate_matrices()].
-#'
-#' @details It currently just print the list of matrices using
-#'  customized arguments for the default print method.
-#'
+
 #' @param x A 'annotate_matrices'-class object. The output of
 #'    [annotate_matrices()].
 #'
 #' @param ... Optional arguments. To be passed to the default print method.
 #'
-#' @examples
-#'
-#' # Adapted from https://lavaan.ugent.be/tutorial/cfa.html
-#'
-#' library(lavaan)
-#
-#' HS.model <- '
-#' visual  =~ x1 + x2 + x3
-#' textual =~ x4 + x5 + x6
-#' speed   =~ x7 + x8 + x9
-#' '
-#' fit_cfa <- cfa(HS.model,
-#'                data = HolzingerSwineford1939)
-#
-#' annotate_matrices(fit_cfa)
 #'
 #' @export
+#' @describeIn annotate_matrices The print method of the output of [annotate_matrices()]
 
 print.annotate_matrices <- function(x, ...) {
     class(x) <- class(x)[-1]

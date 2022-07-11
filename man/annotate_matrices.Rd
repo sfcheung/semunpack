@@ -2,13 +2,21 @@
 % Please edit documentation in R/annotate_model.R
 \name{annotate_matrices}
 \alias{annotate_matrices}
+\alias{print.annotate_matrices}
 \title{Annotate the Matrices of a Lavaan Model}
 \usage{
 annotate_matrices(fit)
+
+\method{print}{annotate_matrices}(x, ...)
 }
 \arguments{
 \item{fit}{The output of \code{\link[lavaan:lavaan]{lavaan::lavaan()}} or its wrappers, such as
 \code{\link[lavaan:cfa]{lavaan::cfa()}} and \code{\link[lavaan:sem]{lavaan::sem()}}.}
+
+\item{x}{A 'annotate_matrices'-class object. The output of
+\code{\link[=annotate_matrices]{annotate_matrices()}}.}
+
+\item{...}{Optional arguments. To be passed to the default print method.}
 }
 \value{
 It returns an \code{annotate_matrices}-class object, which is a
@@ -34,6 +42,11 @@ the model matrices and the model parameters.
 
 It currently supports a single-level single-group model only.
 }
+\section{Methods (by generic)}{
+\itemize{
+\item \code{print}: The print method of the output of \code{\link[=annotate_matrices]{annotate_matrices()}}
+}}
+
 \examples{
 
 # Adapted from https://lavaan.ugent.be/tutorial/cfa.html
