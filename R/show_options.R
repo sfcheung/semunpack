@@ -134,6 +134,7 @@ show_options <- function(fit) {
     out
   }
 
+#' @param x The output of [show_options()].
 #' @param ... Additional arguments. Ignored.
 #' @export
 #' @describeIn show_options The print method of the output of [show_options()].

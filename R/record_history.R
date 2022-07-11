@@ -56,7 +56,7 @@ record_history <- function(fit) {
                                  se = "none",
                                  test = "standard"))
     k <- lavaan::lavInspect(fit1, "iterations")
-    capmat <- out2matrix(cap[1:(k + 1)], names(coef(fit1)))
+    capmat <- out2matrix(cap[1:(k + 1)], names(stats::coef(fit1)))
     attr(capmat, "fit_recorded") <- fit1
     attr(capmat, "original_call") <- stats::getCall(fit)
     class(capmat) <- c("fit_history", class(capmat))
@@ -139,7 +139,7 @@ plot_history_param <- function(param,
 #' @describeIn record_history The plot method for the output of
 #'                            [record_history()].
 #' @order 2
-
+#' @importFrom graphics axTicks axis mtext par title
 plot.fit_history <- function(x,
                              params,
                              last_n = -1,

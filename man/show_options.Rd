@@ -13,6 +13,8 @@ show_options(fit)
 \item{fit}{An output of \code{\link[lavaan:lavaan]{lavaan::lavaan()}} or its wrappers (e.g.,
 \code{\link[lavaan:cfa]{lavaan::cfa()}} and \code{\link[lavaan:sem]{lavaan::sem()}})}
 
+\item{x}{The output of \code{\link[=show_options]{show_options()}}.}
+
 \item{...}{Additional arguments. Ignored.}
 }
 \value{
