@@ -56,7 +56,9 @@ record_history <- function(fit) {
                                  se = "none",
                                  test = "standard"))
     k <- lavaan::lavInspect(fit1, "iterations")
-    capmat <- out2matrix(cap[1:(k + 1)], names(lavaan::coef(fit1)))
+    capmat <- out2matrix(out = cap[1:(k + 1)],
+                         pnames = names(lavaan::coef(fit1)),
+                         fit = fit1)
     attr(capmat, "fit_recorded") <- fit1
     attr(capmat, "original_call") <- stats::getCall(fit)
     class(capmat) <- c("fit_history", class(capmat))
@@ -65,7 +67,7 @@ record_history <- function(fit) {
 
 #' @noRd
 
-out2matrix <- function(out, pnames) {
+out2matrix <- function(out, pnames, fit) {
     out1 <- lapply(out, gsub, pattern = ":", replacement = "")
     out1 <- lapply(out1, function(x) as.numeric(
                       scan(text = x,
@@ -73,6 +75,9 @@ out2matrix <- function(out, pnames) {
                           quiet = TRUE)
                     ))
     out1 <- do.call(rbind, out1)
+    out1a <- out1[, 1:2]
+    out1b <- lav_par_expand(out1[, -c(1:2)], fit = fit)
+    out1 <- cbind(out1a, out1b)
     if (!missing(pnames)) {
         colnames(out1) <- c("iteration", "f", pnames)
       }
@@ -287,10 +292,12 @@ print.fit_history <- function(x, n_iterations = 10, digits = 3, ...) {
       cat("The minimization history for the first", n_iterations,
           "iterations:\n")
     }
+  cnames <- colnames(x)
   out <- x1[2:n_iterations, -1]
   out <- as.data.frame(lapply(out, formatC, digits = digits, format = "f"),
                        check.names = FALSE)
   out1 <- cbind(iteration = x1[2:n_iterations, 1], out)
+  colnames(out1) <- cnames
   print(out1, ...)
   #fit_recorded
   invisible(x)
