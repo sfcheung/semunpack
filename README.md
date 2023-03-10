@@ -6,7 +6,7 @@
 [![R-CMD-check](https://github.com/sfcheung/semunpack/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sfcheung/semunpack/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-(Version 0.0.1.9006), updated on 2023-03-10, [release history](https://sfcheung.github.io/semunpack/news/index.html))
+(Version 0.0.1.9007), updated on 2023-03-11, [release history](https://sfcheung.github.io/semunpack/news/index.html))
 
 # semunpack: Learn SEM Analysis <img src="man/figures/logo.png" align="right" />
 
