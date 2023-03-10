@@ -7,3 +7,4 @@
     - Drafted `show_ifi()`(0.0.1.9001)
     - Drafted `show_options()` (0.0.1.9002)
     - Drafted `record_history()` (0.0.1.9003)
+- Update GitHub actions (0.0.1.9006)
