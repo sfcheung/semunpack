@@ -54,15 +54,15 @@ It will refit the model by the update method of
 \link[lavaan:lavaan-class]{lavaan::lavaan}, setting \code{se = "none"} and \code{test = "standard"} because they have no impact effect on the minimization
 process.
 }
-\section{Methods (by generic)}{
+\section{Functions}{
 \itemize{
-\item \code{plot}: The plot method for the output of
+\item \code{plot(fit_history)}: The plot method for the output of
 \code{\link[=record_history]{record_history()}}.
 
-\item \code{print}: The print method for the output of
+\item \code{print(fit_history)}: The print method for the output of
 \code{\link[=record_history]{record_history()}}.
+
 }}
-
 \examples{
 
 # Adapted from the example for CFA in lavaan::cfa().

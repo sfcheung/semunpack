@@ -45,9 +45,9 @@ understanding how a prepackaged estimator such as \code{ML}, \code{MLM}, and
 }
 \section{Methods (by generic)}{
 \itemize{
-\item \code{print}: The print method of the output of \code{\link[=show_options]{show_options()}}.
-}}
+\item \code{print(show_options)}: The print method of the output of \code{\link[=show_options]{show_options()}}.
 
+}}
 \examples{
 library(lavaan)
 
