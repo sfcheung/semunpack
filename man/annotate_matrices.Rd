@@ -44,9 +44,9 @@ It currently supports a single-level single-group model only.
 }
 \section{Methods (by generic)}{
 \itemize{
-\item \code{print}: The print method of the output of \code{\link[=annotate_matrices]{annotate_matrices()}}
-}}
+\item \code{print(annotate_matrices)}: The print method of the output of \code{\link[=annotate_matrices]{annotate_matrices()}}
 
+}}
 \examples{
 
 # Adapted from https://lavaan.ugent.be/tutorial/cfa.html

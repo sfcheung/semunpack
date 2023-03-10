@@ -39,11 +39,11 @@ and \code{\link[lavaan:sem]{lavaan::sem()}}) and illustrates how CFI is computed
 }
 \section{Functions}{
 \itemize{
-\item \code{show_cfi}: A wrapper of \code{\link[=show_ifi]{show_ifi()}} with \code{fit_measures = "cfi"}.
+\item \code{show_cfi()}: A wrapper of \code{\link[=show_ifi]{show_ifi()}} with \code{fit_measures = "cfi"}.
 
-\item \code{show_tli}: A wrapper of \code{\link[=show_ifi]{show_ifi()}} with \code{fit_measures = "tli"}.
+\item \code{show_tli()}: A wrapper of \code{\link[=show_ifi]{show_ifi()}} with \code{fit_measures = "tli"}.
+
 }}
-
 \examples{
 
 

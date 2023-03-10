@@ -14,7 +14,7 @@ https://github.com/sfcheung/semunpack/releases
 
 The latest developmental version of this package can be installed by `remotes::install_github`:
 
-```
+```r
 remotes::install_github("sfcheung/semunpack")
 ```
 
