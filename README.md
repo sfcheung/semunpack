@@ -8,7 +8,7 @@
 
 (Version 0.0.1.9007), updated on 2023-03-11, [release history](https://sfcheung.github.io/semunpack/news/index.html))
 
-# semunpack: Learn SEM Analysis <img src="man/figures/logo.png" align="right" />
+# semunpack: Learn SEM Analysis <img src="man/figures/logo.png" align="right" height="150"/>
 
 This package includes functions for learning and teaching structural equation
 modeling (SEM). It "unpacks" things inside an SEM analysis. For more information
