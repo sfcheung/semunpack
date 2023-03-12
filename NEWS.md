@@ -7,5 +7,6 @@
     - Drafted `show_ifi()`(0.0.1.9001)
     - Drafted `show_options()` (0.0.1.9002)
     - Drafted `record_history()` (0.0.1.9003)
-- Update GitHub actions (0.0.1.9006)
-- Update the pkgdown site (0.0.1.9007)
+- Update GitHub actions. (0.0.1.9006)
+- Update the pkgdown site. (0.0.1.9007)
+- Change to a light theme. (0.0.1.9007)
