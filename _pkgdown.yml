@@ -3,16 +3,20 @@ destination: docs
 url: https://sfcheung.github.io/semunpack/
 template:
   bootstrap: 5
-  bootswatch: superhero
-  # bslib:
-  #   pkgdown-nav-height: 100px
-  theme: a11y-dark
-  # includes:
-  #   before_title: <h1><b>TEST HTML</b></h1>
-  # bslib:
-  #   bg: "#FFFFFF"
-  #   fg: "#8A04BA"
-    # primary: "#0000FF"
+  bootswatch: united
+  theme: a11y-light
+  bslib:
+    pkgdown-nav-height: 100px
+    bg: "#EFEFEF"
+    fg: "#000000"
+    primary: "#385772"
+    # base_font: {google: "Cabin"}
+    # heading_font: {google: "Cabin"}
+    # code_font: {google: "Cousine"}
+
+navbar:
+  bg: primary
+
 # navbar:
 #   structure:
 #     left:  [intro, articles, reference, news]
