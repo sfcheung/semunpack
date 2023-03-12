@@ -1,6 +1,6 @@
 Package: semunpack
 Title: Learning and Teaching Structural Equation Modeling
-Version: 0.0.1.9007
+Version: 0.0.1.9008
 Authors@R:
     c(person(given = "Shu Fai",
              family = "Cheung",
