@@ -10,3 +10,4 @@
 - Update GitHub actions. (0.0.1.9006)
 - Update the pkgdown site. (0.0.1.9007)
 - Change to a light theme. (0.0.1.9007)
+- Note that this package will no longer be updated. (0.0.1.9009)
