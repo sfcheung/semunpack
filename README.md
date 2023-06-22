@@ -1,12 +1,18 @@
 <!-- badges: start -->
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Suspended - Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.](https://www.repostatus.org/badges/latest/suspended.svg)](https://www.repostatus.org/#suspended)
 [![Code size](https://img.shields.io/github/languages/code-size/sfcheung/semunpack.svg)](https://github.com/sfcheung/semunpack)
 [![Last Commit at Main](https://img.shields.io/github/last-commit/sfcheung/semunpack.svg)](https://github.com/sfcheung/semunpack/commits/main)
 [![R-CMD-check](https://github.com/sfcheung/semunpack/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sfcheung/semunpack/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-(Version 0.0.1.9008), updated on 2023-03-12, [release history](https://sfcheung.github.io/semunpack/news/index.html))
+(Version 0.0.1.9009, updated on 2023-06-22, [release history](https://sfcheung.github.io/semunpack/news/index.html))
+
+# IMPORTANT
+
+Due to potential overlap between this package and
+[semhelpinghands](https://sfcheung.github.io/semhelpinghands/), I migrated
+functions in this package to `semhelpinghands`. This package
+will no longer be updated.
 
 # semunpack: Learn SEM Analysis <img src="man/figures/logo.png" align="right" height="150"/>
 
